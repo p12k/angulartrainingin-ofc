@@ -1,0 +1,83 @@
+<!--<h1>welcome to Ticketing system</h1>
+<input type="text"[(ngModel)]='topimage' value="topimage">
+
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+
+<ul class="nav nav-tabs">
+
+<select [(ngModel)]='topimage'>
+<option>pooja</option>
+<option>chandana</option>
+<option>nupur</option>
+<option>shri</option>
+</select>
+<button class="btn btn-danger" (click)="mymgnt">Show now{{movieName}}</button>
+<img src='./../assets/images/railway.jpg'
+
+[style.width.px]='imgWidth'
+
+[style.height.px]='imgHeight'
+[title]='movieName'>
+Show{{movieName}}-->
+<div class="card" style="width: 1000px;">
+  <div class="card-header">
+{{movieTitle}}
+
+  </div>
+  <div  class='card-body'>
+<div class='row'>
+<div class='col-md-2'>Search By:</div>
+<div class='col-md-4'>
+<input type='text'
+[(ngModel)]='ListFilter'/>
+
+</div>
+
+  </div>
+  <div class='row'>
+<div class='col-md-6'>
+    <h4> movie search:{{listFilter}}</h4>
+    </div>
+    </div>
+  <div  class='table-responsive'>
+    <table class='table'
+    *ngIf='movies && movies.length'>
+    <thead>
+      <tr>
+       <button class='btn btn-primary'(click)='toggleImage()'>show Image</button>
+       
+       <th>Movie Tittle</th>
+        <th>Genre</th>
+         <th>MovieRating</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+       <tr *ngFor='let mov of movies'>
+         <td>
+           <img *ngIf='showimage'
+           [src]='movie.imageurl'
+           [title]='mov.movie'
+           [style.width.px]='imgWidth'
+           [style.height.px]='imgHeight'>
+         </td>
+<td><a [routerLink]="['/movies',mov.movieID]">{{mov.movieName}}</a></td>
+<td>{{mov.movieGenre}}</td>
+<td>{{mov.movieRating}}</td>    
+<td>{{mov.starrating}}</td>
+<td>
+<mov-rating [rating]='mov.movieRating'
+(ratingClick)='onRatingClicked($event)'>
+  </mov-rating>
+</td>
+    </tr>
+    </tbody>
+  </table>
+</div></div>
+

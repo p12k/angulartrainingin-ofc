@@ -1,0 +1,64 @@
+[
+    {
+        "movieID":1,
+        "movieName":"Avengers - EndGame",
+        "movieStar":"Robert Downey",
+        "movieGenre":"Action",
+        "movieRating":5,
+        "movieImg":"assets/images/avenger1.png"
+    },
+    {
+    "movieID":2,
+    "movieName":"Antman",
+    "movieStar":"Paul Rudd",
+    "movieGenre":"Action",
+    "movieRating":4.8,
+    "movieImg":"assets/images/antman.jpg"
+},
+{
+    "movieID":3,
+    "movieName":"How to train your Dragon",
+    "movieStar":"Dawyne",
+    "movieGenre":"Animated",
+    "movieRating":3.5,
+    "movieImg":"assets/images/how-to-train-your-dragon-3.jpg"
+
+},
+{
+    "movieID":4,
+    "movieName":"Tangled",
+    "movieStar":"Mandy moore",
+    "movieGenre":"SciFi",
+    "movieRating":4.5,
+    "movieImg":"assets/images/tangled.jpg"
+
+},
+{
+    "movieID":5,
+    "movieName":"Moana",
+    "movieStar":"Dawyne",
+    "movieGenre":"Animated",
+    "movieRating":5,
+    "movieImg":"assets/images/moana.jpg"
+
+},
+{
+    "movieID":6,
+    "movieName":"IT",
+    "movieStar":"Tim",
+    "movieGenre":"Horror",
+    "movieRating":3.8,
+    "movieImg":"assets/images/it.jpg"
+
+},
+{
+    "movieID":7,
+    "movieName":"Matrix",
+    "movieStar":"Keanu Reeves",
+    "movieGenre":"SciFi",
+    "movieRating":5,
+    "movieImg":"assets/images/matrix.jpg"
+
+}
+
+]
